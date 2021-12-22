@@ -4,6 +4,7 @@ export default {
   
     // Target: https://go.nuxtjs.dev/config-target
     target: "static",
+    mode: "universal",
   
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -19,15 +20,14 @@ export default {
             { hid: "robots", name: "robots", content: "index,follow" }
         ],
         link: [
-            { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+            { rel: "icon", type: "image/x-icon", href: "https://i.imgur.com/kVLRUOs.png" }
         ]
     },
   
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
         { src: "~assets/css/main.css", lang: "css" },
-        "bootstrap-css-only/css/bootstrap.min.css",
-        "mdbvue/lib/css/mdb.min.css"
+        { src: "~assets/css/sidebar.css", lang: "css" }
     ],
   
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,20 +40,28 @@ export default {
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [
         // https://go.nuxtjs.dev/typescript
-        "@nuxt/typescript-build",
+        "@nuxt/typescript-build"
     ],
   
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        "bootstrap-vue/nuxt",
+        "@nuxtjs/markdownit"
     ],
-  
+
+    markdownit: {
+        preset: "default",
+        linkify: true,
+        breaks: true,
+        use: [
+            "markdown-it-div",
+            "markdown-it-attrs"
+        ]
+    },
+    
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
-        extractCSS: true,
-        extend(config, ctx) {},
-        transpile: [
-            "mdbvue/lib/components"
-        ]
+        extractCSS: true
     }
 }
   
