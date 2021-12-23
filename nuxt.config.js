@@ -4,11 +4,10 @@ export default {
   
     // Target: https://go.nuxtjs.dev/config-target
     target: "static",
-    mode: "universal",
-  
+
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: "Wikipedia mcMMO | NightLand.pl",
+        title: "Wikipedia mcMMO",
         htmlAttrs: {
             lang: "pl"
         },
@@ -17,7 +16,8 @@ export default {
             { "http-equiv": "X-UA-Compatible", content: "IE=edge" },
             { name: "viewport", content: "width=device-width, initial-scale=1" },
             { hid: "description", name: "description", content: "Obszerna baza wiedzy na temat mcMMO." },
-            { hid: "robots", name: "robots", content: "index,follow" }
+            { hid: "robots", name: "robots", content: "index,follow" },
+            { hid: "theme-color", name: "theme-color", content: "#27b361" }
         ],
         link: [
             { rel: "icon", type: "image/x-icon", href: "https://i.imgur.com/kVLRUOs.png" }
