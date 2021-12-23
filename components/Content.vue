@@ -1,6 +1,6 @@
 <template>
     <div class="mt-5">
-        <main class="p-2">
+        <main class="p-2 pr-3 pl-3">
             <h1 class="text-center">Wikipedia mcMMO</h1>
             <article v-html="content"></article>
         </main>
