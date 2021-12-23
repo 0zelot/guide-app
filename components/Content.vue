@@ -15,7 +15,12 @@ export default {
     computed: {
         content() {
             const article = this.$route.path == "/" ? this.articles["_"] : this.articles[this.$route.params.pathMatch];
-            return article.replaceAll("{", "<span class='badge badge-guide'>").replaceAll("}", "</span>");
+            return article
+                .replaceAll("{", "<span class='badge badge-guide'>")
+                .replaceAll("}", "</span>")
+                .replaceAll("<h2>", "<h2><span class='hash'># </span>")
+                .replaceAll("<h3>", "<h3><span class='hash'># </span>")
+                .replaceAll("<h4>", "<h4><span class='hash'># </span>")
         }
     },
     data() {
