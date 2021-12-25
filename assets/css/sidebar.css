@@ -2,7 +2,6 @@
     background: var(--sidebar-color);
     height: 100vh;
     min-width: 300px;
-    -webkit-user-select: none;
     user-select: none;
 }
 

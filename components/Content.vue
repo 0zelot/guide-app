@@ -2,7 +2,7 @@
     <div class="mt-5">
         <main class="p-2 pr-3 pl-3">
             <h1 class="text-center">{{this.$config.env.title}}</h1>
-            <article v-html="content"></article>
+            <article class="text-justify" v-html="content"></article>
         </main>
         <footer class="m-0 pb-1">
             <p class="text-center text-muted" v-html="this.$config.env.footer"></p>

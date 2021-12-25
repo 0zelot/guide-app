@@ -38,43 +38,30 @@ footer {
     font-size: 0.8rem;
 }
 
-a {
-    color: var(--primary-color);
-}
-
-a:hover {
+a, a:hover {
     color: var(--primary-color);
 }
 
 article > section > p {
-    margin-bottom: 20px !important;
-    margin-left: 10px !important;
+    margin: 0 0 20px 10px !important;
 }
 
 article > section > ul > li::before, article > section > ul > li > ul > li::before {
     content: "» ";
     color: var(--primary-color);
+    margin: 5px 0 5px 5px !important;
 }
 
-li {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important; 
-    margin-left: 20px !important;
-}
 
-table, tr, td {
-    margin-bottom: 20px !important;
-    margin-left: 10px !important;
+table, tr, td, th {
+    margin: 0 0 20px 10px !important;
+    padding: 5px 20px;
+    font-size: 0.82rem;
 }
 
 table {
     display: block;
     overflow: auto !important;
-}
-
-td, th {
-    padding: 5px 20px;
-    font-size: 0.82rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,20 +82,13 @@ h3 {
     font-size: 1.3rem;
 }
 
-h4 {
-    font-size: 1.2rem;
-}
-
 span.badge.badge-guide {
     background: var(--primary-color);
     margin: 0 5px -5px 5px !important;
+    padding: 5px 10px;
     border-radius: 15px;
 }
 
 span.hash {
     color: var(--primary-color);
-}
-
-article {
-    text-align: justify;
 }
