@@ -7,7 +7,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: "Wikipedia mcMMO",
+        title: process.env.title,
         htmlAttrs: {
             lang: "pl"
         },
@@ -15,12 +15,12 @@ export default {
             { charset: "utf-8" },
             { "http-equiv": "X-UA-Compatible", content: "IE=edge" },
             { name: "viewport", content: "width=device-width, initial-scale=1" },
-            { hid: "description", name: "description", content: "Obszerna baza wiedzy na temat mcMMO." },
+            { hid: "description", name: "description", content: process.env.description },
             { hid: "robots", name: "robots", content: "index,follow" },
             { hid: "theme-color", name: "theme-color", content: "#27b361" }
         ],
         link: [
-            { rel: "icon", type: "image/x-icon", href: "https://i.imgur.com/kVLRUOs.png" }
+            { rel: "icon", type: "image/x-icon", href: process.env.favicon }
         ]
     },
   
@@ -59,6 +59,10 @@ export default {
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
         extractCSS: true
+    },
+
+    publicRuntimeConfig: {
+        env: process.env
     }
 }
   
