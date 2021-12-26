@@ -90,7 +90,7 @@ span.badge.badge-guide {
     border-radius: 15px;
 }
 
-span.hash {
+span.hash, code {
     color: var(--primary-color);
 }
 
@@ -98,4 +98,8 @@ img.icon {
     height: 20px;
     width: auto;
     max-width: 22px;
+}
+
+pre {
+    color: white;
 }
