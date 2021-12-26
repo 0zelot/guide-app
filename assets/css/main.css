@@ -47,7 +47,7 @@ article > section > p {
 }
 
 article > section > ul > li::before, article > section > ul > li > ul > li::before {
-    content: "» ";
+    content: "- ";
     color: var(--primary-color);
     margin: 5px 0 5px 5px !important;
 }

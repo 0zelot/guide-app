@@ -62,7 +62,16 @@ export default {
     },
 
     publicRuntimeConfig: {
-        env: process.env
+        env: {
+            title: process.env.title,
+            description: process.env.description,
+            favicon: process.env.favicon,
+            logo: process.env.logo,
+            subtitle: process.env.subtitle,
+            footer: process.env.footer,
+            lang: process.env.lang,
+            icon_url: process.env.icon_url
+        }
     }
 }
   
