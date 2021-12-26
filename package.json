@@ -1,5 +1,5 @@
 {
-    "name": "mcmmo-guide",
+    "name": "guide-app",
     "version": "1.0.0",
     "private": true,
     "scripts": {
@@ -14,7 +14,6 @@
         "core-js": "^3.15.1",
         "markdown-it-attrs": "^4.1.1",
         "markdown-it-div": "^1.1.0",
-        "nuxt": "^2.15.7",
-        "vue-sidebar-menu": "^5.1.2"
+        "nuxt": "^2.15.7"
     }
 }
