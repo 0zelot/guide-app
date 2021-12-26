@@ -23,7 +23,7 @@ export default {
     head() {
         const slug = this.$route.params.pathMatch;
         return {
-            title: list[slug] ? `${list[slug].title} | ${this.$config.env.title}` : this.$config.env.title
+            title: list[slug] ? `${list[slug].title} | ${this.$config.env.title || "Guide"}` : (this.$config.env.title || "Guide")
         };
     }
 }
