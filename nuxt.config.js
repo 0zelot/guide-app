@@ -9,7 +9,7 @@ export default {
     head: {
         title: process.env.title || "Guide",
         htmlAttrs: {
-            lang: "pl"
+            lang: process.env.lang || "en"
         },
         meta: [
             { charset: "utf-8" },
