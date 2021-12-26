@@ -18,6 +18,8 @@ export default {
             if(article) return article
                 .replaceAll("{", "<span class='badge badge-guide'>")
                 .replaceAll("}", "</span>")
+                .replaceAll("((", `<img class='icon d-block d-lg-inline' alt='Item icon' src='${this.$config.env.icon_url.split("[NAME]")[0]}`)
+                .replaceAll("))", `${this.$config.env.icon_url.split("[NAME]")[1]}'>`)
                 .replaceAll("<h2>", "<h2><span class='hash'># </span>")
                 .replaceAll("<h3>", "<h3><span class='hash'># </span>")
                 .replaceAll("<h4>", "<h4><span class='hash'># </span>")

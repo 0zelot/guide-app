@@ -47,13 +47,9 @@ li.sidebar-item {
     border-radius: 5px;
 }
 
-li.sidebar-item:hover {
+li.sidebar-item:hover, li.sidebar-item.active {
     background: var(--primary-color);
-    transition: all .4s ease-in-out;
-}
-
-li.sidebar-item.active {
-    background: var(--primary-color);
+    transition: all .3s ease-in-out;
 }
 
 a.nav-link {

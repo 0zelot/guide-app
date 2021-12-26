@@ -92,3 +92,9 @@ span.badge.badge-guide {
 span.hash {
     color: var(--primary-color);
 }
+
+img.icon {
+    height: 20px;
+    width: auto;
+    max-width: 22px;
+}
